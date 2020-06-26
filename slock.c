@@ -18,6 +18,7 @@
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <Imlib2.h>
+#include <crypt.h>
 
 #if HAVE_BSD_AUTH
 #include <login_cap.h>
@@ -260,7 +261,7 @@ lockscreen(Display *dpy, int screen) {
 		unlockscreen(dpy, lock);
 		lock = NULL;
 	}
-	else 
+	else
 		XSelectInput(dpy, lock->root, SubstructureNotifyMask);
 
 	return lock;

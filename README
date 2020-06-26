@@ -1,6 +1,6 @@
 slock - simple screen locker
 ============================
-simple screen locker utility for X. 
+simple screen locker utility for X with background image patch
 
 
 Requirements
@@ -22,3 +22,7 @@ Afterwards enter the following command to build and install slock
 Running slock
 -------------
 Simply invoke the 'slock' command. To get out of it, enter your password.
+
+slock -v
+
+slock -i /path/to/image
